@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>kikusui</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./mv_slider.css">
+    <link rel="stylesheet" href="./mv_slide.css">
+    <style>
+      *{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      img {
+        border: none;
+        vertical-align: bottom;
+      }
+      .t-mv__area {
+        height: 100svh;
+        position: relative;
+        z-index: 0;
+        /* background: url(../../images/common/bg-noise-20.webp);
+        background-color: #061C26;
+        background-repeat: repeat;
+        background-size: 200px 200px; */
+      }
+      .mv-slider__wrap {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 0 1fr 0 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        width: 100%;
+        height: 100svh;
+      }
+      .t-mv__area .mv-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .t-mv__area .mv-slider .mv-slide {
+        position: absolute;
+        list-style: none;
+        height: 100%;
+        width: 120%;
+      }
+      .t-mv__area .mv-slider .mv-slide .mv-slide__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .t-mv__area .mv-slider .mv-slide img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      canvas{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="t-mv__area">
+      <div class="mv-slider__wrap">
+        <ul class="mv-slider">
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <!-- <source srcset="./image/iloveimg-resized/mv_left1.jpg" media="(min-width: 768px)"> -->
+                <!-- <source srcset="./image/iloveimg-resized/mv_left1.jpg"> -->
+                <img src="./image/iloveimg-resized/mv_left1.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_left2.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_left3.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_left4.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_left5.jpg">
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="mv-slider">
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_mid1.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_mid2.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_mid3.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_mid4.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_mid5.jpg">
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="mv-slider">
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_right1.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_right2.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_right3.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_right4.jpg">
+              </picture>
+            </div>
+          </li>
+          <li class="mv-slide">
+            <div class="mv-slide__inner">
+              <picture>
+                <img src="./image/iloveimg-resized/mv_right5.jpg">
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <canvas id="waveCanvas"></canvas>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
