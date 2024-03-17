@@ -48,6 +48,11 @@
   animation: slideMask 30s 20s ease infinite;
   z-index: 1;
 }
+.t-mv__area .mv-slider .mv-slide:nth-child(6){
+  -webkit-animation: slideMask 30s ease infinite;
+  animation: slideMask 30s 25s ease infinite;
+  z-index: 1;
+}
 
 .t-mv__area .mv-slider .mv-slide:first-child .mv-slide__inner{
   -webkit-animation: slideMove 30s linear infinite;
@@ -69,6 +74,10 @@
   -webkit-animation: slideMove 30s 20s linear infinite;
   animation: slideMove 30s 20s linear infinite;
 }
+.t-mv__area .mv-slider .mv-slide:nth-child(6) .mv-slide__inner{
+  -webkit-animation: slideMove 30s 25s linear infinite;
+  animation: slideMove 30s 25s linear infinite;
+}
 
 .t-mv__area .mv-slider .mv-slide:first-child .mv-slide__inner img{
   -webkit-animation: slideFade 30s ease infinite;
@@ -89,4 +98,8 @@
 .t-mv__area .mv-slider .mv-slide:nth-child(5) .mv-slide__inner img{
   -webkit-animation: slideFade 30s 20s ease infinite;
   animation: slideFade 30s 20s ease infinite;
+}
+.t-mv__area .mv-slider .mv-slide:nth-child(6) .mv-slide__inner img{
+  -webkit-animation: slideFade 30s 25s ease infinite;
+  animation: slideFade 30s 25s ease infinite;
 }
