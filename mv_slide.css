@@ -26,27 +26,27 @@
 .t-mv__area .mv-slider .mv-slide:first-child{
   -webkit-animation: slideMask 30s ease infinite;
   animation: slideMask 30s ease infinite;
-  z-index: 5;
+  z-index: 6;
 }
 .t-mv__area .mv-slider .mv-slide:nth-child(2){
   -webkit-animation: slideMask 30s ease infinite;
   animation: slideMask 30s 5s ease infinite;
-  z-index: 4;
+  z-index: 5;
 }
 .t-mv__area .mv-slider .mv-slide:nth-child(3){
   -webkit-animation: slideMask 30s ease infinite;
   animation: slideMask 30s 10s ease infinite;
-  z-index: 3;
+  z-index: 4;
 }
 .t-mv__area .mv-slider .mv-slide:nth-child(4){
   -webkit-animation: slideMask 30s ease infinite;
   animation: slideMask 30s 15s ease infinite;
-  z-index: 2;
+  z-index: 3;
 }
 .t-mv__area .mv-slider .mv-slide:nth-child(5){
   -webkit-animation: slideMask 30s ease infinite;
   animation: slideMask 30s 20s ease infinite;
-  z-index: 1;
+  z-index: 2;
 }
 .t-mv__area .mv-slider .mv-slide:nth-child(6){
   -webkit-animation: slideMask 30s ease infinite;
